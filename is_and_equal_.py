@@ -5,10 +5,10 @@
 
 '''
 
-#*! == returns True in case of value equality 
-#*! is returns True in case of refernce equality 
+#*! ==  returns True in case of value equality 
+#*! is  returns True in case of reference equality 
 
-# import inspect
+#*? Using inbuilt function id() to return the unique id / memory address of the input 
 a = [1,2,3]
 print(id(a))
 
@@ -40,8 +40,8 @@ print(d == c)    #*? --> true due to value equality
 print(d == b)    #*? --> true due to value equality 
 
 print(e == a)    #*? --> true as there is value equality between a and e
-print(e is a)    #*? --> false as both a and e are pointing different list,
+print(e is a)    #*? --> false as both a and e are pointing different list
 
 c[1] = 0         #*? --> changes the value of a as well due to reference equality in both
-d[1] = 9
+d[1] = 9         #*? --> change done in d only
 print(a,b,c,d,e) #*? --> no change in b , e
