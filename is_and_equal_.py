@@ -18,7 +18,7 @@ print(id(b))
 c = a
 print(id(c))
 
-d = a.copy()
+d = a.copy() #? returns only a copy with no reference of d to a
 print(id(d))
 
 e = []
