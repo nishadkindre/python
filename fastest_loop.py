@@ -1,8 +1,8 @@
 
 # TODO : SUM THE NUMBERS FROM  0 TO N
-# CONDUCTING DIFFERENT METHODS FOR THE EXECUTION OF THE ABOVE TASK AND ANALYSING THEIR EXECUTION DURATION DIFFENCE
+# CONDUCTING DIFFERENT METHODS FOR THE EXECUTION OF THE ABOVE TASK AND ANALYSING THEIR EXECUTION DURATION DIFFERENCE
 
-#*! WHILE LOOP 
+#? WHILE LOOP 
 def while_loop(n=100_100_100): # underscores can be used in integer literals
     sum = 0
     num = 0
@@ -11,14 +11,14 @@ def while_loop(n=100_100_100): # underscores can be used in integer literals
         num += 1
     return sum
 
-#*!  FOR LOOP
+#?  FOR LOOP
 def for_loop(n = 100_100_100):
     sum = 0
     for num in range(n + 1):
         sum += num
     return sum
 
-#*!  FOR LOOP WITH INCREMENT
+#?  FOR LOOP WITH INCREMENT
 def for_loop_with_increment(n = 100_100_100):
     sum = 0
     for num in range(n + 1):
@@ -26,7 +26,7 @@ def for_loop_with_increment(n = 100_100_100):
         num += 1
     return sum
 
-#*! TESTING FOR A CONDITION 
+#? TESTING FOR A CONDITION 
 def for_loop_with_test(n = 100_100_100):
     sum = 0
     for num in range(n + 1):
@@ -34,7 +34,7 @@ def for_loop_with_test(n = 100_100_100):
         sum += num
     return sum
 
-#*!  FOR LOOP WITH INCREMENT AND TEST
+#?  FOR LOOP WITH INCREMENT AND TEST
 def for_loop_with_increment_and_test(n = 100_100_100):
     sum = 0
     for num in range(n + 1):
@@ -43,16 +43,16 @@ def for_loop_with_increment_and_test(n = 100_100_100):
         num += 1
     return sum
 
-#*! WITH BUILTIN SUM AND RANGE FUNCTION 
+#? WITH BUILTIN SUM AND RANGE FUNCTION 
 def sum_range(n=100_100_100):
     return sum(range(n))
 
-#*! NUMPY  
+#? NUMPY  
 import numpy
 def sum_numpy(n=100_100_100) :
     return numpy.sum(numpy.arange(n))
 
-#*! PURE MATH 
+#? PURE MATH 
 def sum_math(n=100_100_100):
     return (n * (n - 1)) // 2
 
@@ -70,10 +70,9 @@ def main() :
 if __name__ == '__main__' :
     main()
 
-#*? Python is written in C 
+#? Python is written in C 
 
-#*! Python is a slow language
-#*! doing useless operations slows our code
+#! Python is a slow language and doing useless operations slows our code
 
 #*  use built ins over loops wherever you can
 
@@ -84,10 +83,10 @@ if __name__ == '__main__' :
 
 #*  sum math is a pure python and it beats out the C one by a lot
 
-#*!     NOTE : FASTEST WAY TO LOOP IN PYTHON IS NOT TO LOOP IN PYTHON
-#*!     REMEMBER : if you have the luxury of computing the answer mathematically ahead of time,its the best option
+#!     NOTE : FASTEST WAY TO LOOP IN PYTHON IS NOT TO LOOP IN PYTHON
+#!     REMEMBER : if you have the liberty of computing the answer mathematically ahead of time,its the best option
 
-#* Supremacy :
+#* Precedence :
     #* mathematically
     #* in  a pure C function
     #* call a pure C function
