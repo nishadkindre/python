@@ -1,4 +1,3 @@
 # python
-Python - newbie perspective.
+Python - newbie perspective.🤓
 Understanding by simple language.
-🤓
