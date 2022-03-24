@@ -1,7 +1,7 @@
 
 '''
         == --> value equality --> Two objects have the same value
-        is --> reference equality --> Two references refer to the same object , have the same memory location
+        is --> reference equality --> Two references refer to the same object , have the same memory location or id
 
 '''
 
@@ -51,5 +51,10 @@ i = int(input())
 f = list(r for r in range(1,i+1))
 print(f)
 
-print(f is a)
-print(f == a)
+print(f == a)    #? --> true as there is value equality between a and f
+print(f is a)    #? --> false as both a and f are pointing different list,
+
+g = a[:]         
+# print(id(g))
+print(g == a)    #? --> true as there is value equality between a and g
+print(g is a)    #? --> false as both g and a are pointing different list,
